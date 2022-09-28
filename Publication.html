@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="publication.css">
+      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <title>Publications</title>
+   </head>
+   <body>
+    <section>
+        <div>
+            <img src="images/download__1_-removebg-preview.png" height="70px" width="70px" alt="">
+         </div>
+         <div class="publications">
+          <h1>Publications</h1>
+         </div>
+
+
+         <div>
+            <div class="btn">
+                <span class="fas fa-bars"></span>
+             </div>
+             <nav class="sidebar">
+                <div class="text">
+                   Sections
+                </div>
+                <ul>
+                   <li class="active"><a href="Hero.html">Home</a></li>
+                   <li><a href="#">Notice</a></li>
+                   <li>
+                      <a href="#" class="feat-btn">People
+                      <span class="fas fa-caret-down first"></span>
+                      </a>
+                      <ul class="feat-show">
+                         <li><a href="faculty.html">Faculty Members</a></li>
+                         <li><a href="stuff.html">Staffs</a></li>
+                      </ul>
+                   </li>
+                   <li>
+                      <a href="#" class="serv-btn">Clubs
+                      <span class="fas fa-caret-down second"></span>
+                      </a>
+                      <ul class="serv-show">
+                         <li><a href="club.html">BUPRC</a></li>
+                         <li><a href="club.html">BUPITC</a></li>
+                      </ul>
+                   </li>
+                   <li>
+                      <a href="#" class="net-btn">Programme
+                      <span class="fas fa-caret-down third"></span>
+                      </a>
+                      <ul class="net-show">
+                         <li ><a class="bice" href="#">BICE</a></li>
+                         <li>
+                            <a href="#" class="new-btn">Masters
+                            <span class="fas fa-caret-down fourth"></span>
+                            </a>
+                            <ul class="new-show">
+                                <li><a href="">MICT</a></li>
+                                <li><a href="">MISS</a></li>
+                            </ul>    
+                        </li>
+                      </ul>
+                   </li>
+                   <li><a href="#">Allumni</a></li>
+                   <li><a href="galleryboot.html">Gallery</a></li>
+                   <li><a href="Publication.html">Publications</a></li>
+                   <li><a href="Login-signup\index.html">Login-SignUP</a></li>
+                   <li><a href="Contact-form\index.html">Contact Us</a></li>
+                   <li><a href="necessary-file.html">Ncessary Files</a></li>
+                   <li><a href="Hero.html">About Us</a></li>
+                  
+                </ul>
+             </nav>
+         </div>
+    </section> 
+       <div class="pub-text">
+         <h2>All the publication from Department of ICT Will be enlisted here</h2>
+       </div> 
+       <script>
+         $('.btn').click(function(){
+           $(this).toggleClass("click");
+           $('.sidebar').toggleClass("show");
+         });
+           $('.feat-btn').click(function(){
+             $('nav ul .feat-show').toggleClass("show");
+             $('nav ul .first').toggleClass("rotate");
+           });
+           $('.net-btn').click(function(){
+             $('nav ul .net-show').toggleClass("show");
+             $('nav ul .third').toggleClass("rotate");
+           });
+           $('.new-btn').click(function(){
+             $('nav ul .new-show').toggleClass("show");
+             $('nav ul .fourth').toggleClass("rotate");
+           });
+           $('.serv-btn').click(function(){
+             $('nav ul .serv-show').toggleClass("show");
+             $('nav ul .second').toggleClass("rotate");
+           });
+           $('nav ul li').click(function(){
+             $(this).addClass("active").siblings().removeClass("active");
+           });
+      </script>
+   </body>
+</html>
